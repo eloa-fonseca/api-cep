@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/cep.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="enderecoForm">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="00000000" required>
+
+        <button type="button" onclick="buscaCep()">Enviar</button>
+        <button type="button" onclick="editarDados()">Editar</button>
+        <button type="button" onclick="mudarCorCaixas()">Mudar Cor</button>
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" placeholder="Digite o Logradouro" readonly>
+ 
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Digite o Bairro" readonly>
+ 
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento" name="complemento" placeholder="Digite o Complemento"readonly>
+ 
+        <label for="localidade">Localidade:</label>
+        <input type="text" id="localidade" name="localidade" placeholder="Digite a Localidade" readonly>
+ 
+        <label for="ddd">DDD:</label>
+        <input type="text" id="ddd" name="ddd" placeholder="Digite o DDD" readonly>
+ 
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" placeholder="Digite o Estado" readonly>
+ 
+        
+    </form>
+
+    <div id="resultDiv">
+
+
+
+
+
+
+    </div>
+</body>
+</html>
