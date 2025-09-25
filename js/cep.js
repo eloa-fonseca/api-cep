@@ -36,8 +36,14 @@ async function buscaCep() { //
 }
 
 function editarDados() {
-
+    txtLogradouro.disabled = false;
+    txtBairro.disabled = false;
+    txtComplemento.disabled = false;
+    txtLocalidade.disabled = false;S
+    txtDDD.disabled = false;
+    txtEstado.disabled = false;
 }
+
 
 function mudarCorCaixas(){
     txtLogradouro.style.backgroundColor = '#ecf3bcff';
@@ -46,4 +52,16 @@ function mudarCorCaixas(){
     txtLocalidade.style.backgroundColor = '#ecf3bcff';
     txtDDD.style.backgroundColor = '#ecf3bcff';
     txtEstado.style.backgroundColor ='#ecf3bcff';
-}
+    // const arrayInputs = document.querySelectorAll('input');
+
+    // for (let index = 1; index < arrayInputs.length; index++) {
+    //     array[index].style.backgroundcolor ='#ecfbcff';
+        
+    // }
+
+    // arrayInputs.forEach(input =>{ 
+    //     if(input.id != "cep") {
+    //         input.style.backgroundColor='#ecfbcff';
+    //     }
+    // });
+    }
